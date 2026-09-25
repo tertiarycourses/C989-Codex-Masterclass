@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+~$*
+.DS_Store
+source-wsq/
+qa_render*/
+qa_work/
+*.tmp
+*.bak
+courseware/.~lock.*
+node_modules/
