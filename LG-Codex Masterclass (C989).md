@@ -10,7 +10,7 @@ Before you start, have ready:
 
 - The ChatGPT desktop app, signed in on a plan with Codex and Sites.
 - Node.js 22, Python 3 and Git installed; a GitHub account.
-- The lab pack, unzipped. Keep one working folder, cook-and-bake, for Labs 2–11.
+- The lab pack, unzipped. Keep one working folder, cook-and-bake, for Labs 1–10.
 
 Prompts appear as shaded quotes — paste them as written. Code, commands and configuration appear in grey monospace blocks. Product menus change between releases: if a name here differs from your screen, follow the screen and tell the trainer.
 
@@ -55,7 +55,7 @@ All three live in the ChatGPT desktop app. Pick by the artifact you need, not by
 |---|---|---|
 | ChatGPT | Quick thinking: brainstorm, pressure-test, rephrase, a second opinion | Optional: pressure-test a prompt before you hand it to Codex |
 | ChatGPT Work | Multi-step business work across your apps, ending in a finished file | Not used in this course |
-| Codex | Building software, and running skills and agents in a project | Every lab: Labs 2–11 |
+| Codex | Building software, and running skills and agents in a project | Every lab: Labs 1–10 |
 
 Tip: Rule of thumb: if the output is code, Codex. If it is a business artifact, Work. If you just need to think, Chat.
 
@@ -63,9 +63,9 @@ Tip: Rule of thumb: if the output is code, Codex. If it is a business artifact, 
 
 Three topics in one day. Every topic ends in labs that move the business forward.
 
-1. **T1 · Fundamentals** — Build the site with Codex, add sign-up forms, and publish it. Labs 2–4.
-1. **T2 · RAG Assistant** — SQLite knowledge base, course assistant, ChatGPT mode, Computer Use QA. Labs 5–8.
-1. **T3 · Skills and Hooks** — skills.sh, custom skills, a workshop popup and a hook that checks every edit. Labs 9–11.
+1. **T1 · Fundamentals** — Build the site with Codex, add sign-up forms, and publish it. Labs 1–3.
+1. **T2 · RAG Assistant** — SQLite knowledge base, course assistant, ChatGPT mode, Computer Use QA. Labs 4–7.
+1. **T3 · Skills and Hooks** — skills.sh, custom skills, a workshop popup and a hook that checks every edit. Labs 8–10.
 
 #### Lab Materials
 
@@ -73,11 +73,11 @@ Ten labs, each in its own folder with a README, prompts (MD and PDF), assets and
 
 | Topic | Labs | Surface |
 |---|---|---|
-| 1 | 2 Build · 3 Rules + sign-up · 4 Publish | Codex |
-| 2 | 5 Knowledge base · 6 Assistant + /goal · 7 ChatGPT mode · 8 QA | Codex |
-| 3 | 9 skills.sh · 10 Custom skills · 11 Popup + hook | Codex |
+| 1 | 1 Build · 2 Rules + sign-up · 3 Publish | Codex |
+| 2 | 4 Knowledge base · 5 Assistant + /goal · 6 ChatGPT mode · 7 QA | Codex |
+| 3 | 8 skills.sh · 9 Custom skills · 10 Popup + hook | Codex |
 
-Tip: Labs build on each other: Lab 8 QA-tests the sign-up form you built in Lab 3 and the assistant you built in Lab 6.
+Tip: Labs build on each other: Lab 7 QA-tests the sign-up form you built in Lab 2 and the assistant you built in Lab 5.
 
 #### Lesson Plan (9:30 AM – 5:30 PM)
 
@@ -86,9 +86,9 @@ Lunch 30 min. Full timings and slide numbers are in the Lesson Plan.
 | Block | Time | What we cover |
 |---|---|---|
 | Morning 1 | 9:30–10:25 | Welcome · Topic 1 · projects, /plan and the workflow |
-| Morning 2 | 10:25–12:15 | Labs 2–4 · Topic 1 recap · lunch 12:15–12:45 |
-| Afternoon 1 | 12:45–15:10 | Topic 2 · Labs 5–8 |
-| Afternoon 2 | 15:10–17:30 | Topic 3 · Labs 9–11 · summary and feedback |
+| Morning 2 | 10:25–12:15 | Labs 1–3 · Topic 1 recap · lunch 12:15–12:45 |
+| Afternoon 1 | 12:45–15:10 | Topic 2 · Labs 4–7 |
+| Afternoon 2 | 15:10–17:30 | Topic 3 · Labs 8–10 · summary and feedback |
 
 Tip: One day: 7.5 instructional hours, 9:30 AM – 5:30 PM, with a 30-minute lunch.
 
@@ -191,9 +191,9 @@ A plugin connects ChatGPT and Codex to a tool. Install once; call it with @ in a
 
 Install these two now so every lab just works; @Sites needs nothing. Use your personal accounts, never an employer's.
 
-- **@GitHub** — Repos, pull requests, issues and CI. Lab 4 — publish and review.
-- **@Computer Use** — Your desktop and browser. Lab 8. On macOS also grant Screen Recording and Accessibility, then restart.
-- **@Sites · built in** — Nothing to install. Publishes the Lab 4 site; keep access at Only those invited.
+- **@GitHub** — Repos, pull requests, issues and CI. Lab 3 — publish and review.
+- **@Computer Use** — Your desktop and browser. Lab 7. On macOS also grant Screen Recording and Accessibility, then restart.
+- **@Sites · built in** — Nothing to install. Publishes the Lab 3 site; keep access at Only those invited.
 
 #### Publish with @Sites
 
@@ -205,14 +205,14 @@ Sites turns work into a hosted page — static or full-stack.
 1. **Choose access** — Only those invited keeps it private; public needs public publishing enabled.
 1. **Know the limits** — Not for health, payment data or users under 13. Sites also offers a database and hosted secrets.
 
-### Key ideas for Lab 2
+### Key ideas for Lab 1
 
 #### Projects, Folders and Permissions
 
 Create a local project, then Edit project → Add folder. The sandbox decides what Codex may touch.
 
 - **read-only** — Reads files and plans; no edits. For exploring a repo you do not know yet.
-- **workspace-write** — Edits and runs commands inside the project — the default for Git folders. Normal building, Labs 2–11.
+- **workspace-write** — Edits and runs commands inside the project — the default for Git folders. Normal building, Labs 1–10.
 - **danger-full-access** — Anything, anywhere, with no sandbox. Almost never — a throwaway machine only.
 
 #### The 7-Step Codex Workflow
@@ -244,7 +244,7 @@ The reference build — yours will differ in the details, not the function.
 - **Filters and search** — All / Bakery / Cooking, plus free-text search.
 - **Assistant button** — Opens the course assistant you build in Topic 2.
 
-### Lab 2 — Plan and Build the Site with /plan
+### Lab 1 — Plan and Build the Site with /plan
 
 **The story so far:** The research is back: home cooks aged 28–45 book weekend classes on their phones, and sourdough and pastry lead demand. Grace approves the line-up and wants a site she can show investors on Friday — driven by the catalogue, so a fee change never needs a developer.
 
@@ -254,7 +254,7 @@ The reference build — yours will differ in the details, not the function.
 
 **Surface:** Codex  ·  **Time:** 40 min  ·  **Slides:** 26–29
 
-**Lab folder:** labs/lab-02-plan-and-build-the-site/ — assets: courses.csv, brand.md, market-brief-sample.md, hero-images.md
+**Lab folder:** labs/lab-01-plan-and-build-the-site/ — assets: courses.csv, brand.md, market-brief-sample.md, hero-images.md
 
 **Step-by-step**
 
@@ -302,7 +302,7 @@ The reference build — yours will differ in the details, not the function.
 
 Why it matters: If the page is blank, open the browser console. "Failed to fetch" means you opened the file directly instead of via http://.
 
-### Key ideas for Lab 3
+### Key ideas for Lab 2
 
 #### Context Engineering with AGENTS.md
 
@@ -310,13 +310,13 @@ Durable rules Codex reads at the start of every session.
 
 - **/init writes it** — Codex inspects the repo and drafts AGENTS.md. Then you cut it down — generic advice wastes context on every turn.
 - **Four sections** — What this is · Commands · Conventions · Boundaries. Under 60 lines.
-- **Nested files scope rules** — kb/AGENTS.md adds rules for the knowledge-base folder only — Lab 5 uses one.
+- **Nested files scope rules** — kb/AGENTS.md adds rules for the knowledge-base folder only — Lab 4 uses one.
 
 #### A Sign-up Form with No Backend
 
 A static site cannot receive data. Be honest about where a sign-up goes.
 
-**In class (Lab 3)**
+**In class (Lab 2)**
 
 - Validated in the browser, with inline errors
 - Saved to localStorage on that device
@@ -340,7 +340,7 @@ One shared dialog, prefilled with the course the visitor chose.
 - **Real validation** — Singapore mobile format, valid email, required consent.
 - **Allergy warning** — A nut allergy on a nut course warns — it does not block.
 
-### Lab 3 — Project Rules and a Sign-up Form for Every Course
+### Lab 2 — Project Rules and a Sign-up Form for Every Course
 
 **The story so far:** Investors liked the site and asked the obvious question: how does anyone book? There is no budget for a booking system yet. Grace needs a sign-up form on every course that works on a static site — and rules so every future change follows the academy's standards.
 
@@ -350,7 +350,7 @@ One shared dialog, prefilled with the course the visitor chose.
 
 **Surface:** Codex  ·  **Time:** 30 min  ·  **Slides:** 33–36
 
-**Lab folder:** labs/lab-03-rules-and-signup-forms/ — assets: AGENTS.template.md, signup-spec.md, signups-format.csv
+**Lab folder:** labs/lab-02-rules-and-signup-forms/ — assets: AGENTS.template.md, signup-spec.md, signups-format.csv
 
 **Step-by-step**
 
@@ -393,7 +393,7 @@ One shared dialog, prefilled with the course the visitor chose.
 
 Why it matters: A static site cannot receive data. Say so honestly: localStorage and a CSV export for class; a form service in production.
 
-### Key ideas for Lab 4
+### Key ideas for Lab 3
 
 #### GitHub Pages or Sites?
 
@@ -413,7 +413,7 @@ The static build runs on both. Choose by audience and backend.
 - Access: invited, workspace or public
 - Private link for investors
 
-### Lab 4 — Publish the Site: GitHub Pages and Sites
+### Lab 3 — Publish the Site: GitHub Pages and Sites
 
 **The story so far:** Investors want a link, not a laptop demo — and every improvement from now on should land on a live site, not sit in a folder. Publish it: publicly on GitHub Pages for customers, privately on Sites for investors.
 
@@ -423,7 +423,7 @@ The static build runs on both. Choose by audience and backend.
 
 **Surface:** Codex → GitHub Pages → @Sites  ·  **Time:** 25 min  ·  **Slides:** 38–42
 
-**Lab folder:** labs/lab-04-publish-the-site/ — assets: publish-checklist.md
+**Lab folder:** labs/lab-03-publish-the-site/ — assets: publish-checklist.md
 
 **Step-by-step**
 
@@ -468,8 +468,8 @@ Why it matters: Publish early. From now on every lab ends with a push, and the l
 
 The site is live and taking sign-ups. But visitors still have questions nobody is answering.
 
-- **Planned  ·  Lab 2** — Plan mode showed the steps and questions before any edit; the 7-step workflow built the site.
-- **Built and live  ·  Labs 3–4** — AGENTS.md rules, a sign-up form on every course, on GitHub Pages and Sites.
+- **Planned  ·  Lab 1** — Plan mode showed the steps and questions before any edit; the 7-step workflow built the site.
+- **Built and live  ·  Labs 2–3** — AGENTS.md rules, a sign-up form on every course, on GitHub Pages and Sites.
 - **What is missing** — Answers. "Is the macaron class nut-free?" should not need a phone call. That is Topic 2.
 
 ## Topic 2 — Tools and the SQLite RAG Assistant
@@ -481,7 +481,7 @@ Slides 44–73. In this topic you will:
 - A SQLite knowledge base that runs in the browser
 - ChatGPT mode, red-teaming and Computer Use QA
 
-### Key ideas for Lab 5
+### Key ideas for Lab 4
 
 #### Codex Slash Commands — Start and Steer
 
@@ -551,7 +551,7 @@ Build once with Node; answer in the visitor's browser.
 1. **SQLite WASM** — The browser loads the file into memory.
 1. **Answer** — Search mode quotes; ChatGPT mode writes.
 
-### Lab 5 — Turn the Brochures into a SQLite Knowledge Base
+### Lab 4 — Turn the Brochures into a SQLite Knowledge Base
 
 **The story so far:** A day after going live Grace's phone keeps ringing: is the macaron class nut-free, where do I park, can my 13-year-old come? The answers are all in her brochures. Nobody reads them. Step one of a course assistant: make those documents searchable.
 
@@ -561,7 +561,7 @@ Build once with Node; answer in the visitor's browser.
 
 **Surface:** Codex  ·  **Time:** 25 min  ·  **Slides:** 51–54
 
-**Lab folder:** labs/lab-05-sqlite-knowledge-base/ — assets: kb/, brochures-pdf/, kb-AGENTS.md
+**Lab folder:** labs/lab-04-sqlite-knowledge-base/ — assets: kb/, brochures-pdf/, kb-AGENTS.md
 
 **Step-by-step**
 
@@ -601,7 +601,7 @@ Build once with Node; answer in the visitor's browser.
 
 Why it matters: Why SQLite and not a vector database? One file, no server, runs on GitHub Pages, and bm25 keyword ranking is strong on short, factual course documents.
 
-### Key ideas for Lab 6
+### Key ideas for Lab 5
 
 #### Measure Before You Trust
 
@@ -618,7 +618,7 @@ Thirty golden questions decide whether the assistant is ready.
 
 Tip: The reference build scores 30/30 in under 1 ms per question.
 
-### Lab 6 — Build the Course Assistant and Drive It with /goal
+### Lab 5 — Build the Course Assistant and Drive It with /goal
 
 **The story so far:** Grace wants the assistant live before term — but only if it is right. A wrong allergy answer is a liability. Build it, measure it against 30 questions real customers asked, and do not stop until it scores 30 out of 30.
 
@@ -628,7 +628,7 @@ Tip: The reference build scores 30/30 in under 1 ms per question.
 
 **Surface:** Codex  ·  **Time:** 35 min  ·  **Slides:** 56–60
 
-**Lab folder:** labs/lab-06-course-assistant-and-goal/ — assets: golden-questions.csv, assistant-spec.md
+**Lab folder:** labs/lab-05-course-assistant-and-goal/ — assets: golden-questions.csv, assistant-spec.md
 
 **Step-by-step**
 
@@ -680,7 +680,7 @@ Tip: The reference build scores 30/30 in under 1 ms per question.
 
 Why it matters: The golden set is your exam paper. Changing it to pass is cheating — and the hooks lab will catch it.
 
-### Key ideas for Lab 7
+### Key ideas for Lab 6
 
 #### Search Mode or ChatGPT Mode?
 
@@ -704,7 +704,7 @@ Same retrieval. Different last step.
 
 Everything in a static site is public. So is any key you put there.
 
-- **Never ship a key** — A key in js/ or the repo is readable by every visitor the moment it deploys. Your Lab 10 $gitpush skill scans for it.
+- **Never ship a key** — A key in js/ or the repo is readable by every visitor the moment it deploys. Your Lab 9 $gitpush skill scans for it.
 - **Bring your own key** — The visitor pastes a key; it lives in sessionStorage for that tab and goes only to api.openai.com, which allows browser calls.
 - **In production** — Keep the key server-side: a Sites app with a hosted secret, or a small proxy. Static stays static.
 
@@ -716,7 +716,7 @@ Search mode shown. Every answer lists the brochure it came from.
 - **Structured** — The cheapest course comes from SQL, not search.
 - **Cited** — Sources link back to the course card or FAQ.
 
-### Lab 7 — Add ChatGPT Mode, Then Try to Break It
+### Lab 6 — Add ChatGPT Mode, Then Try to Break It
 
 **The story so far:** The answers are accurate but read like a brochure. Grace's partner wants friendlier replies — with no server bill and no chance of the bot inventing a discount. Add a ChatGPT mode that stays grounded, then attack it like a mischievous visitor would.
 
@@ -726,7 +726,7 @@ Search mode shown. Every answer lists the brochure it came from.
 
 **Surface:** Codex  ·  **Time:** 25 min  ·  **Slides:** 64–67
 
-**Lab folder:** labs/lab-07-chatgpt-mode-and-red-team/ — assets: grounded-prompt.md, red-team.csv, responses-api-example.md
+**Lab folder:** labs/lab-06-chatgpt-mode-and-red-team/ — assets: grounded-prompt.md, red-team.csv, responses-api-example.md
 
 **Step-by-step**
 
@@ -765,7 +765,7 @@ Search mode shown. Every answer lists the brochure it came from.
 
 Why it matters: The browser can call the API directly (it allows CORS), which is why the key must come from the visitor, not the site.
 
-### Key ideas for Lab 8
+### Key ideas for Lab 7
 
 #### The Computer Use Tool
 
@@ -775,7 +775,7 @@ Codex sees the screen and operates it, one step at a time.
 - **Act** — Clicks, types and navigates the real browser.
 - **Report** — Compares what it saw with what you asked, with screenshots as evidence.
 
-### Lab 8 — QA the Whole Site with @Computer Use
+### Lab 7 — QA the Whole Site with @Computer Use
 
 **The story so far:** The site is live, but Grace asks one question before she announces it on Monday: has anyone actually tried to sign up on a phone? Let Codex use the site like a visitor, on desktop and mobile, and fix what breaks before a customer finds it.
 
@@ -785,7 +785,7 @@ Codex sees the screen and operates it, one step at a time.
 
 **Surface:** Codex + Computer Use  ·  **Time:** 25 min  ·  **Slides:** 69–72
 
-**Lab folder:** labs/lab-08-qa-with-computer-use/ — assets: qa-script.md, defect-template.csv
+**Lab folder:** labs/lab-07-qa-with-computer-use/ — assets: qa-script.md, defect-template.csv
 
 **Step-by-step**
 
@@ -831,8 +831,8 @@ Why it matters: "Do not fix anything yet" keeps testing and repair as two review
 
 The assistant answers correctly and the site passes QA. But every check still depends on you remembering to run it.
 
-- **Knowledge base  ·  Labs 5–6** — 140 searchable sections, and an assistant at 30/30.
-- **Safe and tested  ·  Labs 7–8** — ChatGPT mode that stays grounded, and a Computer Use QA pass.
+- **Knowledge base  ·  Labs 4–5** — 140 searchable sections, and an assistant at 30/30.
+- **Safe and tested  ·  Labs 6–7** — ChatGPT mode that stays grounded, and a Computer Use QA pass.
 - **What is missing** — Repeatable expertise and rules that enforce themselves. That is Topic 3.
 
 ## Topic 3 — Skills and Hooks
@@ -844,7 +844,7 @@ Slides 74–102. In this topic you will:
 - A workshop popup that turns visitors into sign-ups
 - A hook that re-checks the site after every edit
 
-### Key ideas for Lab 9
+### Key ideas for Lab 8
 
 #### What an Agent Skill Is
 
@@ -897,14 +897,14 @@ All verified on skills.sh and installed with npx skills add.
 
 | Skill | From | Lab |
 |---|---|---|
-| frontend-design | anthropics/skills | Lab 9 — polish the site |
-| cybersecurity-analyst | rysweet/amplihack | Lab 9 — threat review |
-| anthropic-cybersecurity-skills | reason-machines/security-skills | Lab 9 — security library |
+| frontend-design | anthropics/skills | Lab 8 — polish the site |
+| cybersecurity-analyst | rysweet/amplihack | Lab 8 — threat review |
+| anthropic-cybersecurity-skills | reason-machines/security-skills | Lab 8 — security library |
 | seo-audit | coreyhaines31/marketingskills | Extension — search fixes |
 | lead-magnets | coreyhaines31/marketingskills | Extension — starter guide |
 | newsletter-generation | bytedance/deer-flow | Extension — newsletter |
 
-### Lab 9 — Install Community Skills from skills.sh
+### Lab 8 — Install Community Skills from skills.sh
 
 **The story so far:** A designer friend says the site looks a bit template. Grace's insurer asks what happens to the personal data in sign-ups. There is no designer and no security team — but you can install one of each as a skill.
 
@@ -914,13 +914,13 @@ All verified on skills.sh and installed with npx skills add.
 
 **Surface:** Codex  ·  **Time:** 25 min  ·  **Slides:** 80–85
 
-**Lab folder:** labs/lab-09-skills-from-skills-sh/ — assets: skills-to-install.md, security-review-scope.md
+**Lab folder:** labs/lab-08-skills-from-skills-sh/ — assets: skills-to-install.md, security-review-scope.md
 
 **Step-by-step**
 
 1. **Install frontend-design** — Run the first command in skills-to-install.md. It lands in .agents/skills/.
 1. **Read before you run** — Open the SKILL.md. Skills run with your permissions.
-1. **Polish the site** — Paste Prompt A. It uses brand.md, in your project since Lab 2.
+1. **Polish the site** — Paste Prompt A. It uses brand.md, in your project since Lab 1.
 1. **Install the security skills** — Run the two security commands.
 1. **Review the attack surface** — Paste Prompt B. Fix the top finding.
 1. **Commit the lock file** — skills.sh creates it automatically; it records exactly what you installed.
@@ -964,7 +964,7 @@ npx skills add https://github.com/reason-machines/security-skills \
 
 Why it matters: anthropic-cybersecurity-skills is a large library. Invoke the specific skill you need rather than all of it.
 
-### Key ideas for Lab 10
+### Key ideas for Lab 9
 
 #### Create Your Own Skill
 
@@ -978,7 +978,7 @@ Do the work first, then save it. Never write a skill from a blank page.
 
 #### Anatomy of kb-update
 
-Frontmatter, steps, report, never. The reference skill from Lab 10.
+Frontmatter, steps, report, never. The reference skill from Lab 9.
 
 **.agents/skills/kb-update/SKILL.md**
 
@@ -1003,7 +1003,7 @@ Files changed · the eval line · anything unconfirmed.
 Never invent a fee, date or allergen. Ask.
 ```
 
-### Lab 10 — Create Custom Codex Skills
+### Lab 9 — Create Custom Codex Skills
 
 **The story so far:** Mid-Autumn is coming and Grace wants a Mooncake Making course on the site next week. Adding a course touches the catalogue, a brochure, the knowledge base and a test — every season. Do it once by hand, then make it a skill anyone can run.
 
@@ -1013,12 +1013,12 @@ Never invent a fee, date or allergen. Ask.
 
 **Surface:** Codex  ·  **Time:** 25 min  ·  **Slides:** 88–93
 
-**Lab folder:** labs/lab-10-custom-codex-skills/ — assets: BAK-111-mooncake.md, project-setup-skill/, skill-reference.md
+**Lab folder:** labs/lab-09-custom-codex-skills/ — assets: BAK-111-mooncake.md, project-setup-skill/, skill-reference.md
 
 **Step-by-step**
 
 1. **Install a given skill** — Paste Prompt A — install only, do not run.
-1. **Do the job by hand** — From BAK-111-mooncake.md, add a row to your project's data/courses.csv (from Lab 2), a brochure and a golden question. Run npm run check.
+1. **Do the job by hand** — From BAK-111-mooncake.md, add a row to your project's data/courses.csv (from Lab 1), a brochure and a golden question. Run npm run check.
 1. **Save it as a skill** — Paste Prompt B.
 1. **Create a second skill** — Paste Prompt C for course-brochure.
 1. **Test by name** — Run $course-brochure BAK-111.
@@ -1055,11 +1055,11 @@ Never invent a fee, date or allergen. Ask.
 **Stretch**
 
 - Withdraw BAK-109 with $kb-update and confirm it marks it withdrawn rather than deleting it.
-- Save your Lab 4 publish routine as a $gitpush skill (see solution/.agents/skills/gitpush).
+- Save your Lab 3 publish routine as a $gitpush skill (see solution/.agents/skills/gitpush).
 
 Why it matters: The description is the trigger. Write "Use when…", naming the words a colleague would actually type.
 
-### Key ideas for Lab 11
+### Key ideas for Lab 10
 
 #### Hooks: Code That Always Runs
 
@@ -1069,7 +1069,7 @@ A rule in AGENTS.md persuades. A hook enforces — it runs at a fixed point in e
 1. **UserPromptSubmit** — Before your prompt is sent. Can block, e.g. a pasted key.
 1. **PreToolUse** — Before a tool runs. Can deny, e.g. writing an API key.
 1. **The tool runs** — Codex edits a file or runs a command.
-1. **PostToolUse** — After the tool. e.g. run npm run check and tell Codex what failed (Lab 11).
+1. **PostToolUse** — After the tool. e.g. run npm run check and tell Codex what failed (Lab 10).
 1. **Stop** — The turn ends. e.g. log what changed.
 
 #### Add a Hook by Asking
@@ -1082,7 +1082,7 @@ You describe the event and the action in plain words. Codex writes the configura
 
 #### Timer, Event or Schedule?
 
-Three different triggers — and three different features. Lab 11 uses the first two.
+Three different triggers — and three different features. Lab 10 uses the first two.
 
 - **A timer on the website** — Fires in the visitor's browser after 10 seconds on the page. Built by Codex in JavaScript: the workshop invite.
 - **A Codex event → a hook** — Fires when Codex does something, e.g. finishes editing a file. Not a timer, not a schedule: re-check after every edit.
@@ -1096,7 +1096,7 @@ After 10 seconds on the page, one friendly invite — once per visitor.
 - **Three fields** — Name, Singapore mobile and email — validated in the browser.
 - **Polite** — Shown once, closes with X or Esc, never over another dialog.
 
-### Lab 11 — A Workshop Popup and a Hook That Checks Every Edit
+### Lab 10 — A Workshop Popup and a Hook That Checks Every Edit
 
 **The story so far:** Grace is running a free Pastries Workshop & Treat next Wednesday at the Bukit Timah campus to fill the first term. Visitors browse the site but leave without signing up. And her part-time administrator is about to start editing brochures — one wrong allergen line could go live. Invite the visitors who linger, and make Codex re-check every edit.
 
@@ -1106,7 +1106,7 @@ After 10 seconds on the page, one friendly invite — once per visitor.
 
 **Surface:** Codex  ·  **Time:** 35 min  ·  **Slides:** 98–102
 
-**Lab folder:** labs/lab-11-workshop-popup-and-a-hook/ — assets: workshop-brief.md
+**Lab folder:** labs/lab-10-workshop-popup-and-a-hook/ — assets: workshop-brief.md
 
 **Step-by-step**
 
@@ -1116,7 +1116,7 @@ After 10 seconds on the page, one friendly invite — once per visitor.
 1. **Ask for the hook** — Paste Prompt B. Codex sets the hook up for you — no configuration to write.
 1. **Trust it** — Codex asks you to review and trust the new hook. Read what it runs (npm run check), then trust it.
 1. **Watch it fire** — Paste Prompt C. Straight after the edit the hook runs the check, a golden question fails, and Codex puts the allergen line back.
-1. **Publish** — Run $gitpush (Lab 10). GitHub Pages redeploys with the invite.
+1. **Publish** — Run $gitpush (Lab 9). GitHub Pages redeploys with the invite.
 
 **PROMPT A — the workshop popup**
 
@@ -1169,10 +1169,10 @@ Why it matters: A timer, a hook and a schedule are three different triggers: the
 
 Everything Cook & Bake needs to take bookings is online.
 
-1. **Planned** — Plan mode showed the steps before any edit; the 7-step workflow built the site (Lab 2).
-1. **Live** — Site, sign-ups and rules, published (Labs 3–4).
-1. **Assisted** — SQLite RAG assistant at 30/30, two modes (5–8).
-1. **Governed** — Skills, a workshop popup, a hook on every edit (9–11).
+1. **Planned** — Plan mode showed the steps before any edit; the 7-step workflow built the site (Lab 1).
+1. **Live** — Site, sign-ups and rules, published (Labs 2–3).
+1. **Assisted** — SQLite RAG assistant at 30/30, two modes (4–7).
+1. **Governed** — Skills, a workshop popup, a hook on every edit (8–10).
 
 ## Quick Command Reference
 

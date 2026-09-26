@@ -33,26 +33,24 @@ By the end of the course, learners will be able to:
 
 | Topic | What it covers | Labs |
 |---|---|---|
-| **1. Fundamentals: Chat, Work and Codex** | evolution of AI engineering, harness engineering and the agent loop, OpenAI products and GPT-6 models, the desktop app and plugins, projects and permissions, the 7-step workflow, `/plan`, `AGENTS.md`, publishing | 2–4 |
-| **2. Tools and the SQLite RAG Assistant** | Codex slash commands and `/goal`, RAG, a SQLite FTS5 knowledge base in the browser, golden-question evaluation, bring-your-own-key ChatGPT mode, red-teaming, `@Computer Use` QA | 5–8 |
-| **3. Skills and Hooks** | `SKILL.md` vs `AGENTS.md`, installing skills from skills.sh, `$skill-creator`, a timed workshop popup, and a hook that re-checks every edit | 9–11 |
+| **1. Fundamentals: Chat, Work and Codex** | evolution of AI engineering, harness engineering and the agent loop, OpenAI products and GPT-6 models, the desktop app and plugins, projects and permissions, the 7-step workflow, `/plan`, `AGENTS.md`, publishing | 1–3 |
+| **2. Tools and the SQLite RAG Assistant** | Codex slash commands and `/goal`, RAG, a SQLite FTS5 knowledge base in the browser, golden-question evaluation, bring-your-own-key ChatGPT mode, red-teaming, `@Computer Use` QA | 4–7 |
+| **3. Skills and Hooks** | `SKILL.md` vs `AGENTS.md`, installing skills from skills.sh, `$skill-creator`, a timed workshop popup, and a hook that re-checks every edit | 8–10 |
 
 ## Labs
 
 Each lab has its own folder with the scenario and context, a step-by-step README (Markdown and PDF), copy-paste prompts (Markdown and PDF), starter assets, a solution state where the lab produces code, and an evidence checklist. Start with the [scenario](labs/SCENARIO.md) and the [labs index](labs/README.md).
 
-The labs are numbered 2–11 to match the shared Cook & Bake lab series; the series' Lab 1 (market research) is not part of this course, so start at Lab 2.
-
-2. [Plan and Build the Site with /plan](labs/lab-02-plan-and-build-the-site/README.md)
-3. [Project Rules and a Sign-up Form for Every Course](labs/lab-03-rules-and-signup-forms/README.md)
-4. [Publish the Site: GitHub Pages and Sites](labs/lab-04-publish-the-site/README.md)
-5. [Turn the Brochures into a SQLite Knowledge Base](labs/lab-05-sqlite-knowledge-base/README.md)
-6. [Build the Course Assistant and Drive It with /goal](labs/lab-06-course-assistant-and-goal/README.md)
-7. [Add ChatGPT Mode, Then Try to Break It](labs/lab-07-chatgpt-mode-and-red-team/README.md)
-8. [QA the Whole Site with @Computer Use](labs/lab-08-qa-with-computer-use/README.md)
-9. [Install Community Skills from skills.sh](labs/lab-09-skills-from-skills-sh/README.md)
-10. [Create Custom Codex Skills](labs/lab-10-custom-codex-skills/README.md)
-11. [A Workshop Popup and a Hook That Checks Every Edit](labs/lab-11-workshop-popup-and-a-hook/README.md)
+1. [Plan and Build the Site with /plan](labs/lab-01-plan-and-build-the-site/README.md)
+2. [Project Rules and a Sign-up Form for Every Course](labs/lab-02-rules-and-signup-forms/README.md)
+3. [Publish the Site: GitHub Pages and Sites](labs/lab-03-publish-the-site/README.md)
+4. [Turn the Brochures into a SQLite Knowledge Base](labs/lab-04-sqlite-knowledge-base/README.md)
+5. [Build the Course Assistant and Drive It with /goal](labs/lab-05-course-assistant-and-goal/README.md)
+6. [Add ChatGPT Mode, Then Try to Break It](labs/lab-06-chatgpt-mode-and-red-team/README.md)
+7. [QA the Whole Site with @Computer Use](labs/lab-07-qa-with-computer-use/README.md)
+8. [Install Community Skills from skills.sh](labs/lab-08-skills-from-skills-sh/README.md)
+9. [Create Custom Codex Skills](labs/lab-09-custom-codex-skills/README.md)
+10. [A Workshop Popup and a Hook That Checks Every Edit](labs/lab-10-workshop-popup-and-a-hook/README.md)
 
 ## Public package
 
@@ -62,13 +60,13 @@ The labs are numbered 2–11 to match the shared Cook & Bake lab series; the ser
   - [Lesson Plan (PDF)](courseware/LP-Codex%20Masterclass%20%28C989%29.pdf) · [DOCX](courseware/LP-Codex%20Masterclass%20%28C989%29.docx)
 - [Learner Guide (Markdown, v1.0)](LG-Codex%20Masterclass%20%28C989%29.md) — concepts and the full step-by-step procedure for every lab
 - [Scenario](labs/SCENARIO.md) and [labs index](labs/README.md)
-- 10 self-contained lab folders; Lab 11's solution holds the complete verified Cook & Bake site
+- 10 self-contained lab folders; Lab 10's solution holds the complete verified Cook & Bake site
 
 You need the ChatGPT desktop app ([download](https://chatgpt.com/download/)) with Codex, and a GitHub account. All business data is synthetic; every learner email address in the fixtures resolves to your own inbox through plus-addressing.
 
 ## Distribution boundary
 
-This public repository contains the courseware, learner-safe guidance, synthetic data and lab assets. Only the current courseware version is published. Source references, build tooling, archived versions, credentials, `.env` files and QA artifacts are intentionally excluded. The API keys in Lab 11 (`sk-proj-TEST…`) are deliberate fakes used to prove the secrets hook works.
+This public repository contains the courseware, learner-safe guidance, synthetic data and lab assets. Only the current courseware version is published. Source references, build tooling, archived versions, credentials, `.env` files and QA artifacts are intentionally excluded. The API keys in Lab 10 (`sk-proj-TEST…`) are deliberate fakes used to prove the secrets hook works.
 
 ## Provider
 
